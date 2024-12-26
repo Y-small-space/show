@@ -3,3 +3,89 @@
   padding: 0;
   margin: 0;
 }
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.ant-layout {
+  min-height: 100vh;
+  background: #f5f7fa !important;
+}
+
+.ant-layout-header {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ant-menu {
+  font-weight: 500 !important;
+  letter-spacing: -0.3px;
+}
+
+.ant-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 16px;
+  }
+}
+
+/* 轮播图样式 */
+.carousel-dots {
+  bottom: 60px !important;
+  /* 调整点的位置，避免与描述文字重叠 */
+}
+
+.carousel-dots li button {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.carousel-dots li.slick-active button {
+  background: #fff !important;
+}
+
+/* 轮播图过渡动画 */
+.slick-slide {
+  transition: opacity 0.5s ease;
+}
+
+/* 轮播图样式 */
+.ant-carousel .slick-dots {
+  bottom: 12px;
+}
+
+.ant-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #fff;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+}
+
+.ant-carousel .slick-slide img {
+  display: inline-block;
+}
