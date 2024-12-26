@@ -94,7 +94,7 @@ export default function Features() {
       content: {
         title: "用户管理",
         description: "完整的用户资料管理系统，支持个性化设置。",
-        details: ["个人信息编辑", "头像上传", "密码修改"],
+        details: ["个人信息编辑", "头像上传"],
         images: [
           {
             src: "/images/profile/profile_1.png",
