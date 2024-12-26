@@ -13,7 +13,6 @@ import {
   CloudServerOutlined,
   AppstoreOutlined,
 } from "@ant-design/icons";
-import { useRouter } from "next/navigation";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -24,12 +23,6 @@ const fadeInUp = {
 };
 
 export default function Home() {
-  const router = useRouter();
-
-  const handleFeatureClick = () => {
-    router.push("/features");
-  };
-
   return (
     <main
       style={{

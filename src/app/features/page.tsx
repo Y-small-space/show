@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Typography, Tabs, Carousel } from "antd";
+import { Card, Typography } from "antd";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import {
@@ -9,8 +9,6 @@ import {
   UserOutlined,
   FileImageOutlined,
   ContactsOutlined,
-  LeftOutlined,
-  RightOutlined,
   SafetyCertificateOutlined,
   GlobalOutlined,
   BgColorsOutlined,
@@ -39,37 +37,6 @@ interface Feature {
     }[];
   };
 }
-
-// 添加自定义箭头按钮组件
-const CarouselArrow = ({ type, ...props }) => (
-  <button
-    {...props}
-    style={{
-      position: "absolute",
-      top: "50%",
-      transform: "translateY(-50%)",
-      [type === "prev" ? "left" : "right"]: "10px",
-      zIndex: 2,
-      background: "rgba(255, 255, 255, 0.9)",
-      border: "none",
-      borderRadius: "50%",
-      width: "32px",
-      height: "32px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      cursor: "pointer",
-      boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-      transition: "all 0.3s ease",
-    }}
-  >
-    {type === "prev" ? (
-      <LeftOutlined style={{ fontSize: "14px", color: "#666" }} />
-    ) : (
-      <RightOutlined style={{ fontSize: "14px", color: "#666" }} />
-    )}
-  </button>
-);
 
 export default function Features() {
   const [activeSection, setActiveSection] = useState("profile");
