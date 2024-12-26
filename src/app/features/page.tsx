@@ -97,7 +97,7 @@ export default function Features() {
         details: ["个人信息编辑", "头像上传", "密码修改"],
         images: [
           {
-            src: "/images/profile/profile-1.png",
+            src: "/images/profile/profile_1.png",
             alt: "用户管理",
             desc: "用户管理功能展示",
           },
@@ -147,13 +147,7 @@ export default function Features() {
         title: "好友管理系统",
         description:
           "完整的好友管理功能，支持添加好友、分组管理、在线状态显示等。",
-        details: [
-          "好友搜索与添加",
-          "好友分组管理",
-          "在线状态实时显示",
-          "好友备注设置",
-          "好友关系管理",
-        ],
+        details: ["好友搜索与添加", "在线状态实时显示", "好友备注设置"],
         images: [
           {
             src: "/images/friends/friends_1.png",
